@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Inter";
+  font-family: Inter;
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/inter-400.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: Inter;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/inter-700.woff2") format("woff2");
@@ -15,12 +15,37 @@
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: Inter;
   font-style: normal;
   font-weight: 900;
   src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
+
+@font-face {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  src: format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 700;
+  src: format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 900;
+  src: format("woff2");
+  font-display: swap;
+}
+
 
 :root{
   --main-color:#2D3440;
@@ -29,7 +54,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family:  Inter, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   background-color: #FEAFC3;
