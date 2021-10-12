@@ -22,39 +22,14 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: 400;
-  src: format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: 700;
-  src: format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: 900;
-  src: format("woff2");
-  font-display: swap;
-}
-
-
-:root{
-  --main-color:#2D3440;
-  --secondary-color:#565C66;
-  --light-color:#FCFCFC;
+:root {
+  --main-color: #2D3440;
+  --secondary-color: #565C66;
+  --light-color: #FCFCFC;
 }
 
 body {
-  font-family:  Inter, Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   background-color: #FEAFC3;
@@ -206,8 +181,8 @@ body {
 }
 
 .product-card-image {
-background-position: 50% 50%;
-border-radius: 50%;
+  background-position: 50% 50%;
+  border-radius: 50%;
 }
 
 .product-card-title {
