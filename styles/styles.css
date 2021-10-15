@@ -29,20 +29,39 @@
 }
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: Inter, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   background-color: #FEAFC3;
   color: var(--main-color);
+
 }
 
-.page-header {}
+.page-header {
+  display: flex;
+  Width: 1170px;
+  margin:0 auto;
+}
 
-.logo {}
+.logo {
+  margin: 0;
+  padding: 0;
+  width: 137px;
+  margin-right: 16px;
+}
 
 .header-navigation {}
 
-.header-navigation-list {}
+.header-navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  margin-right: 198px;
+}
 
 .header-navigation-item {}
 
@@ -54,6 +73,10 @@ body {
 }
 
 .header-phone {
+  margin: 0;
+  padding: 0;
+  width: 148px;
+  margin-right: 18px;
   line-height: 20px;
   color: var(--main-color);
   font-weight: 700;
@@ -68,15 +91,41 @@ body {
   text-decoration: none;
 }
 
-.header-navigation-user {}
+.header-navigation-user {
+  margin: 0;
+  padding: 0;
+  width: 253px;
+  margin-left: auto;
+}
 
 .visually-hidden {}
 
 .main-index {}
 
-.first-screen {}
+.main-conteiner{
+  flex-grow: 1;
+  margin: 0 auto;
+}
 
-.first-screen-offer {}
+.main-conteiner{
+  width: 1170px;
+}
+
+.first-screen {
+}
+
+.cream{
+  display: flex;
+}
+
+.navigation-social{
+  display: flex;
+}
+
+.first-screen-offer {
+  margin-left: 70px;
+  margin-right: 2px;
+}
 
 .first-screen-title {
   font-weight: 900;
@@ -113,7 +162,11 @@ body {
 
 .ice-cream-hidden {}
 
-.slider-pagination {}
+.slider-pagination {
+  width: 52px;
+  padding: 0;
+  margin-right: auto;
+}
 
 .slider-pagination-item {}
 
@@ -121,7 +174,11 @@ body {
 
 .slider-pagination-button-current {}
 
-.social-list {}
+.social-list {
+  width: 144px;
+  padding: 0;
+  margin-left: auto;
+}
 
 .social-item {}
 
@@ -136,20 +193,31 @@ body {
 
 .second-screen-title {}
 
-.second-screen-list {}
+.second-screen-list {
+  display: flex;
+  outline: 5px solid green;
+  outline-offset: -5px;
+}
 
 .second-screen-item {
+  width: 570px;
+  height: 268px;
   background: #FF7799;
   border-radius: 16px;
 }
 
 .raspberry-gift {
+  width: 199px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
 
-.raspberry-gift-description {}
+.raspberry-gift-description {
+  width: 321px;;
+}
+
+
 
 .marshmallows-gift {
   font-weight: 700;
