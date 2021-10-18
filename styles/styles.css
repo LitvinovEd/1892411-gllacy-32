@@ -736,6 +736,7 @@ button {}
 }
 
 .catalog-filter {
+  margin-bottom: 40px;
 }
 
 .top-filters{
@@ -791,7 +792,9 @@ display: flex;
   line-height: 20px;
 }
 
-.catalog-product {}
+.catalog-product {
+  margin-bottom: 16px;
+}
 
 .pagination {
   list-style-type: none;
@@ -803,7 +806,7 @@ display: flex;
 .directory-navigation{
   display: flex;
   width: 1170px;
-  height: 126px;
+  min-height: 126px;
 }
 
 
