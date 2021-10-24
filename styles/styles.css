@@ -299,7 +299,7 @@ button {}
   margin: auto;
   width: 527px;
   margin-top: 80px;
-  margin-bottom: 56px;
+  margin-bottom: 107px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -309,28 +309,38 @@ button {}
 .product-list {
   margin: 0px;
   padding: 0px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  gap: 91px 30px;
+  grid-template-columns: 270px 270px 270px 270px;
 }
 
 .product-card {
   background: var(--light-color);
   border-radius: 8px;
   width: 270px;
+  height: 281px;
   list-style-type: none;
 }
 
 .product-card-link {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--main-color);
   text-decoration: none;
 }
 
 .product-card-image {
+  margin-top: -51px;
+  margin-bottom: 16px;
   background-position: 50% 50%;
   border-radius: 50%;
 }
 
 .product-card-title {
+  margin: 0;
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -338,9 +348,20 @@ button {}
 }
 
 .product-card-description {
+  margin: 0;
+  margin-bottom: 20px;
+  width: 190px;
   text-align: center;
   color: var(--secondary-color);
 }
+
+.add-to-basket {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 
 .product-card-price {
   font-weight: 700;
@@ -460,7 +481,9 @@ button {}
 
 .newsletter-form {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  margin: 26px;
 }
 
 .newsletter-email {
@@ -468,11 +491,21 @@ button {}
 }
 
 .field {
-  width: 332px;
-  height: 48px;
+  margin: 0;
+  line-height: 20px;
+  padding-left: 16px;
+  width: 312px;
+  height: 44px;
+  border: 1px solid #B9B9B9;
+  color: #B9B9B9;
+  border-radius: 4px;
+
 }
 
 .newsletter-button {
+  padding: 0;
+  width: 152px;
+  height: 44px;
   font-weight: 700;
   line-height: 20px;
   font-size: 16px;
@@ -482,8 +515,6 @@ button {}
   border: 4px solid rgba(255, 47, 100, 0.3);
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
-  width: 152px;
-  height: 44px;
 }
 
 .delivery {
@@ -526,12 +557,22 @@ button {}
 }
 
 .appointment-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 24px 16px;
   margin-left: 40px;
 }
 
-.appointment-form-date {}
+.appointment-form-date {
+  font-weight: 700;
+}
 
-.form-delivery{
+.field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-delivery {
   background-color: var(--light-color);
   width: 500px;
   height: 406px;
@@ -556,9 +597,12 @@ button {}
 
 .appointment-form-address {
   font-weight: 700;
+  grid-column: 1/-1;
 }
 
 .button-send {
+  grid-column: 1 / -1;
+  justify-self: center;
   background: #FF2F64;
   border: 4px solid rgba(255, 47, 100, 0.3);
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
@@ -581,7 +625,7 @@ button {}
   background-repeat: no-repeat;
 }
 
-.feedback-form{
+.feedback-form {
   margin: 64px;
   background-color: var(--light-color);
   width: 303px;
@@ -590,34 +634,34 @@ button {}
   padding: 40px 0px 0px 40px;
 }
 
-.address{
+.address {
   width: 179px;
   height: 44px;
   margin: 0px;
   margin-bottom: 12px;
 }
 
-.street{
+.street {
   width: 263px;
   height: 48px;
   margin: 0px;
   margin-bottom: 24px;
 }
 
-.for-order{
+.for-order {
   width: 203px;
   height: 22px;
   margin: 0px;
   margin-bottom: 12px;
 }
 
-.phone{
+.phone {
   width: 225px;
   height: 24px;
   margin: 0px;
 }
 
-.time{
+.time {
   width: 160px;
   height: 20px;
   margin: 0px;
@@ -669,7 +713,7 @@ button {}
 .footer-ul {
   display: flex;
   width: 356px;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 48px 200px 57px 0px;
 }
@@ -736,13 +780,23 @@ button {}
 }
 
 .catalog-filter {
-  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 807px;
+  margin-bottom: 91px;
 }
 
-.top-filters{
-display: flex;
+.sorting-filter {
 }
 
+.top-filters {
+}
+
+.sorting-price {
+}
+
+.fatness{
+}
 .catalog-text {
   font-size: 14px;
   line-height: 20px;
@@ -796,6 +850,13 @@ display: flex;
   margin-bottom: 16px;
 }
 
+.catalog-product-list {
+  display: grid;
+  gap: 91px 30px;
+  grid-template-columns: 270px 270px 270px 270px;
+  padding: 0;
+}
+
 .pagination {
   list-style-type: none;
   display: flex;
@@ -803,7 +864,7 @@ display: flex;
   margin-top: 51px;
 }
 
-.directory-navigation{
+.directory-navigation {
   display: flex;
   width: 1170px;
   min-height: 126px;
