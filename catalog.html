@@ -9,7 +9,7 @@
 
 <body>
   <header class="page-header">
-    <div><img class="logo" src="img/logo.svg" width="137" height="56" alt="логотип Глейси"></div>
+    <a href="index.html"><img class="logo" src="img/logo.svg" width="137" height="56" alt="Логотип Глейси"></a>
     <nav class="header-navigation">
       <ul class="header-navigation-list">
         <li class="header-navigation-item">
@@ -25,25 +25,37 @@
     </nav>
     <a class="header-phone" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
     <ul class="header-navigation-user">
-      <li class="header-navigation-item-icon">
+      <li class="header-search">
         <a class="header-navigation-link" href="#">
-          <span class="visually-hidden">
-            Поиск
-          </span>
+          <svg class="header-search-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M1.91 7.25a5.33 5.33 0 1 1 10.67 0 5.33 5.33 0 0 1-10.67 0Zm9.56 5.16a6.67 6.67 0 1 1 .94-.94l2.8 2.8a.67.67 0 0 1-.94.95l-2.8-2.81Z"
+              fill="#2D3440" /></svg>
+          <span class="visually-hidden">Поиск</span>
         </a>
       </li>
-      <li class="header-navigation-item-icon">
+      <li class="header-entry-cart">
         <a class="header-navigation-link" href="#">
-          <span class="visually-hidden">
-            Вход
-          </span>
+          <svg class="header-entry-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M9.2.87c0-.36.3-.66.68-.66h3a2.17 2.17 0 0 1 2.16 2.17v10.5a2.17 2.17 0 0 1-2.16 2.16h-3a.67.67 0 0 1 0-1.33h3a.83.83 0 0 0 .83-.84V2.38a.83.83 0 0 0-.84-.83h-3a.67.67 0 0 1-.66-.67ZM5.66 3.4a.67.67 0 0 1 .95 0l3.74 3.75a.66.66 0 0 1 0 .95L6.6 11.85a.67.67 0 1 1-.95-.95l2.62-2.6H.87a.67.67 0 0 1 0-1.34h7.4L5.65 4.35a.67.67 0 0 1 0-.95Z"
+              fill="#2D3440" /></svg>
+          Вход
         </a>
       </li>
-      <li class="header-navigation-item-icon">
+      <li class="header-entry-cart">
         <a class="header-navigation-link" href="#">
+          <svg class="header-cart-icon" aria-hidden="true" focusable="false" width="17" height="16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M1.31.49a.67.67 0 0 0 0 1.33h2.06l.54 2.7.01.05 1.1 5.44a1.97 1.97 0 0 0 1.96 1.6h6.32a1.97 1.97 0 0 0 1.96-1.6l1.05-5.47a.67.67 0 0 0-.66-.8H5.12l-.55-2.71a.67.67 0 0 0-.65-.54h-2.6Zm5.01 9.26L5.4 5.08h9.46l-.9 4.68a.64.64 0 0 1-.63.5H6.96a.64.64 0 0 1-.64-.5ZM5.21 14.2a1.32 1.32 0 1 1 2.64 0 1.32 1.32 0 0 1-2.64 0Zm7.17 0a1.32 1.32 0 1 1 2.64 0 1.32 1.32 0 0 1-2.64 0Z"
+              fill="#2D3440" /></svg>
           <span class="visually-hidden">
             Корзина
           </span>
+          Пусто
         </a>
       </li>
     </ul>
@@ -67,15 +79,15 @@
     <section class="catalog-filter">
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="sorting-filter">
+        <fieldset class="sorting-filter">
           <label class="catalog-text" for="sorting">Сортировка</label>
           <select class="select-control" id="sorting" name="sorting">
             <option value="popular">По популярности</option>
             <option value="cheap">Сначала дешёвое</option>
             <option value="expensive">Сначала дорогое</option>
           </select>
-        </div>
-        <div class="sorting-price">
+        </fieldset>
+        <fieldset class="sorting-price">
           <legend class="catalog-filter-title">Цена</legend>
           <button class="range-toggle toggle-min" type="button">
             <span class="visually-hidden">Изменить минимальную цену.</span>
@@ -89,7 +101,7 @@
           <label class="catalog-filter-label">
             до <input class="catalog-filter-input" type="number" name="max-price"> ₽
           </label>
-        </div>
+        </fieldset>
         <fieldset class="fatness">
           <legend class="catalog-filter-title">Жирность</legend>
           <ul class="catalog-filter-list">
