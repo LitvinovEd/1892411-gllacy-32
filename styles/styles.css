@@ -323,7 +323,7 @@ button {}
 }
 
 .slider-button:focus {
-  border: transparent;
+  border-color: transparent;
   outline: 2px solid var(--main-color);
 }
 
