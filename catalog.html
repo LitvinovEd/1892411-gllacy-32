@@ -13,7 +13,7 @@
     <nav class="header-navigation">
       <ul class="header-navigation-list">
         <li class="header-navigation-item">
-          <a class="header-navigation-link" href="catalog.html">Каталог</a>
+          <a class="header-navigation-link active-page" href="catalog.html">Каталог</a>
         </li>
         <li class="header-navigation-item">
           <a class="header-navigation-link" href="#">Доставка и оплата</a>
@@ -23,7 +23,7 @@
         </li>
       </ul>
     </nav>
-    <a class="header-phone" href="tel:+7800555-86-28">+7 800 555-86-28</a>
+    <a class="header-phone" href="tel:+78005558628">+7 800 555-86-28</a>
     <ul class="header-navigation-user">
       <li class="header-search">
         <a class="header-link header-link-search" href="#">
@@ -69,7 +69,7 @@
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="#">Каталог</a>
         </li>
-        <li class="breadcrumbs-item">
+        <li class="breadcrumbs-item-active">
           <a class="breadcrumbs-link">Сливочное</a>
         </li>
       </ul>
@@ -152,35 +152,35 @@
             <li class="catalog-filter-item">
               <label class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="chocolate" checked>
-                <span class="control-mark"></span>
+                <span class="control-mark-checkbox"></span>
                 <span class="control-label">шоколадные</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="powdered sugar" checked>
-                <span class="control-mark"></span>
+                <span class="control-mark-checkbox"></span>
                 <span class="control-label">сахарные присыпки</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="fruits">
-                <span class="control-mark"></span>
+                <span class="control-mark-checkbox"></span>
                 <span class="control-label">фрукты</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="syrups">
-                <span class="control-mark"></span>
+                <span class="control-mark-checkbox"></span>
                 <span class="control-label">сиропы</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="jams">
-                <span class="control-mark"></span>
+                <span class="control-mark-checkbox"></span>
                 <span class="control-label">джемы</span>
               </label>
             </li>
@@ -410,15 +410,20 @@
         </li>
       </ul>
       <div class="directory-navigation">
-        <button class="button pagination-show-more" type="button">Показать ещё</button>
+        <button class="button button-order pagination-show-more" type="button">Показать ещё</button>
         <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-prev">
+          <li class="pagination-item prev">
+            <a class="pagination-prev" href="#">
+              <svg class="icon-pagination-previous" aria-hidden="true" focusable="false" width="6" height="12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.8 1.8a.66.66 0 1 0-.94-.94L.2 5.53a.66.66 0 0 0 0 .94l4.67 4.67a.66.66 0 0 0 .94-.94L1.6 6l4.2-4.2Z" />
+            </svg>
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link pagination-current" href="#">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -432,13 +437,19 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">5</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item next">
             <a class="pagination-link pagination-next" href="#">
+              <svg class="icon-pagination-next" aria-hidden="true" focusable="false" width="6" height="12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.8 1.8a.66.66 0 1 0-.94-.94L.2 5.53a.66.66 0 0 0 0 .94l4.67 4.67a.66.66 0 0 0 .94-.94L1.6 6l4.2-4.2Z" />
+            </svg>
               <span class="visually-hidden">Следующая страница</span>
             </a>
           </li>
         </ul>
       </div>
+      <div class="delimiter"></div>
     </section>
   </main>
   <footer class="page-footer">
@@ -492,7 +503,8 @@
     </nav>
     <div class="developer">
       <img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy">
-      <div class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>© 2021
+      <div class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>©
+        2021
       </div>
     </div>
   </footer>
