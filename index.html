@@ -15,6 +15,26 @@
       <ul class="header-navigation-list">
         <li class="header-navigation-item">
           <a class="header-navigation-link" href="catalog.html">Каталог</a>
+          <div class="catalog-navigation">
+            <button class="close-catalog-navigation" type="button">Каталог</button>
+            <h2 class="visually-hidden">Список групп товаров</h2>
+            <a class="catalog-new-items" href="#">Новинки</a>
+            <div class="catalog-navigation-delimiter"></div>
+            <ul class="catalog-navigation-list">
+              <li class="catalog-navigation-item">
+                <a class="catalog-link" href="catalog.html">Сливочное</a>
+              </li>
+              <li class="catalog-navigation-item">
+                <a class="catalog-link" href="#">Щербеты</a>
+              </li>
+              <li class="catalog-navigation-item">
+                <a class="catalog-link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="catalog-navigation-item">
+                <a class="catalog-link" href="#">Мелорин</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="header-navigation-item">
           <a class="header-navigation-link" href="#">Доставка и оплата</a>
@@ -35,6 +55,23 @@
               fill="#2D3440" /></svg>
           <span class="visually-hidden">Поиск</span>
         </a>
+        <div class="popover-search">
+          <div class="popover-search-box">
+            <button class="popover-close-search" type="button">
+              <svg class="header-search-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.91 7.25a5.33 5.33 0 1 1 10.67 0 5.33 5.33 0 0 1-10.67 0Zm9.56 5.16a6.67 6.67 0 1 1 .94-.94l2.8 2.8a.67.67 0 0 1-.94.95l-2.8-2.81Z"
+                  fill="#2D3440" /></svg>
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <label class="visually-hidden" for="modal-search">
+              Поиск по сайту
+            </label>
+            <input class="popover-search-imput" type="text" id="modal-search" name="modal-search"
+              placeholder="Поиск поиск по сайту">
+          </div>
+        </div>
       </li>
       <li class="header-entry-cart">
         <a class="header-link header-link-card" href="#">
@@ -45,6 +82,38 @@
               fill="#2D3440" /></svg>
           Вход
         </a>
+        <div class="popover-entry">
+          <button class="popover-close-search popover-close-entry" type="button">
+            <svg class="header-entry-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.2.87c0-.36.3-.66.68-.66h3a2.17 2.17 0 0 1 2.16 2.17v10.5a2.17 2.17 0 0 1-2.16 2.16h-3a.67.67 0 0 1 0-1.33h3a.83.83 0 0 0 .83-.84V2.38a.83.83 0 0 0-.84-.83h-3a.67.67 0 0 1-.66-.67ZM5.66 3.4a.67.67 0 0 1 .95 0l3.74 3.75a.66.66 0 0 1 0 .95L6.6 11.85a.67.67 0 1 1-.95-.95l2.62-2.6H.87a.67.67 0 0 1 0-1.34h7.4L5.65 4.35a.67.67 0 0 1 0-.95Z"
+                fill="#2D3440" /></svg>
+            <span class="entry-close-text">Вход</span>
+          </button>
+          <h2 class="popover-entr-title">Личный кабинет</h2>
+          <form class="popover-form-entry" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="popover-form-case">
+              <label class="visually-hidden" for="entry-mail">
+                Електронная почта
+              </label>
+              <input class="form-fields popover-entry-form" type="text" id="entry-mail" name="entry-mail"
+                placeholder="email@example.com">
+            </div>
+            <div class="popover-form-case">
+              <label class="visually-hidden" for="entry-password">
+                Пароль
+              </label>
+              <input class="form-fields popover-entry-form" type="text" id="entry-password" name="entry-password"
+                placeholder="Пароль">
+            </div>
+            <button class="additional-button" type="button">Войти</button>
+          </form>
+          <div class="registration-case">
+            <a class="popover-entry-registration" href="#">Забыли пароль?</a>
+            <a class="popover-entry-registration" href="#">Регистрация</a>
+          </div>
+        </div>
       </li>
       <li class="header-entry-cart">
         <a class="header-link header-link-card" href="#">
@@ -58,6 +127,22 @@
           </span>
           Пусто
         </a>
+        <div class="popover popover-cart">
+          <div class="popover-content">
+            <button class="popover-close-button button button-light" type="button">
+              <svg class="header-cart-icon" aria-hidden="true" focusable="false" width="17" height="16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.31.49a.67.67 0 0 0 0 1.33h2.06l.54 2.7.01.05 1.1 5.44a1.97 1.97 0 0 0 1.96 1.6h6.32a1.97 1.97 0 0 0 1.96-1.6l1.05-5.47a.67.67 0 0 0-.66-.8H5.12l-.55-2.71a.67.67 0 0 0-.65-.54h-2.6Zm5.01 9.26L5.4 5.08h9.46l-.9 4.68a.64.64 0 0 1-.63.5H6.96a.64.64 0 0 1-.64-.5ZM5.21 14.2a1.32 1.32 0 1 1 2.64 0 1.32 1.32 0 0 1-2.64 0Zm7.17 0a1.32 1.32 0 1 1 2.64 0 1.32 1.32 0 0 1-2.64 0Z"
+                  fill="#2D3440" /></svg>
+              Пусто
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <h2 class="popover-cart-title">
+              Ваша корзина пока пуста
+            </h2>
+          </div>
+        </div>
       </li>
     </ul>
   </header>
@@ -417,12 +502,51 @@
       </ul>
     </nav>
     <div class="developer">
-      <img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy">
+      <a href="https://htmlacademy.ru/">
+        <img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy">
+      </a>
       <div class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>©
         2021
       </div>
     </div>
   </footer>
+  <div class="modal-container">
+  <div class="modal modal-auth">
+    <button class="modal-close-button">
+      <span class="visually-hidden">Закрыть модальное окно</span>
+    </button>
+    <section class="modal-content">
+      <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="modal-form-box">
+          <label class="visually-hidden" for="modal-name">
+            Имя и фамилия
+          </label>
+          <input class="form-fields modal-form-name" type="text" id="modal-name" name="modal-name"
+            placeholder="Имя и фамилия">
+        </div>
+        <div class="modal-form-box">
+          <label class="visually-hidden" for="modal-phone">
+            Телефон
+          </label>
+          <input class="form-fields modal-form-phone" type="tel" id="modal-phone" name="modal-phone"
+            placeholder="+7 800 999-00-00">
+        </div>
+        <div class="modal-form-box">
+          <label class="visually-hidden" for="modal-text">
+            Адрес
+          </label>
+          <textarea class="form-fields modal-form-text" id="modal-text" name="modal-text"
+            placeholder="В свободной форме"></textarea>
+        </div>
+        <div class="modal-form-button">
+          <button class="additional-button" type="submit">Отправить</button>
+        </div>
+      </form>
+    </section>
+  </div>
+</div>
 </body>
+
 
 </html>
