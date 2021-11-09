@@ -107,11 +107,11 @@ button {}
 .catalog-navigation {
   position: absolute;
   top: 78px;
-  padding: 16px;
   min-width: 106px;
   height: auto;
   background-color: var(--light-color);
   border-radius: 4px;
+  padding: 8px 0;
   display: none;
 }
 
@@ -139,11 +139,15 @@ button {}
 .catalog-navigation-item {
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 12px;
+  padding: 8px 16px;
 }
 
-.catalog-navigation-item:last-child {
-  margin: 0;
+.catalog-navigation-item:hover{
+  background-color: #FFCBD8;
+}
+
+.catalog-navigation-item:active{
+  background-color: var(--second-color);
 }
 
 .catalog-new-items {
@@ -153,7 +157,7 @@ button {}
   line-height: 20px;
   text-decoration: none;
   color: var(--main-color);
-  margin-bottom: 12px;
+  margin-bottom: 4px;
 }
 
 .catalog-link {
@@ -161,16 +165,18 @@ button {}
   color: var(--main-color);
 }
 
+
 .catalog-navigation-title {
   margin: 0;
   padding: 0;
 }
 
 .catalog-navigation-delimiter {
-  width: 100%;
-  height: 2px;
-  background-color: var(--neutral-color);
-  margin-bottom: 12px;
+  min-width: 104px;
+  border: 1px solid var(--neutral-color);
+  margin-bottom: 4px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .header-phone {
@@ -214,6 +220,7 @@ button {}
   border: 1px solid var(--neutral-color);
   border-radius: 4px;
   background-color: #FFFFFF;
+
 }
 
 .popover-close-search {
@@ -740,7 +747,7 @@ button {}
 
 .slider-pagination-item {
   margin-right: 8px;
-  border:none;
+  border: none;
 }
 
 .pagination-item:hover {
@@ -1302,6 +1309,44 @@ button {}
   margin-left: 5px;
 }
 
+.info-label {
+  position: absolute;
+  left: 20px;
+  top: -10px;
+  padding: 10px 8px;
+  background-color: var(--light-color);
+  box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
+  border-radius: 1px;
+  width: 162px;
+  border: 1px solid var(--neutral-color);
+  margin-left: 7px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  z-index: 1;
+  display: none;
+}
+
+.info-label:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  background: #FCFCFC;
+  position: absolute;
+  left: -6px;
+  top: 11px;
+  border-bottom: 1px solid var(--neutral-color);
+  border-left: 1px solid var(--neutral-color);
+  z-index: 1;
+}
+
+.info:hover .info-label{
+  display: block;
+}
+
 .form-date {
   margin: 0;
   width: 84px;
@@ -1730,6 +1775,14 @@ button {}
   content: "";
 }
 
+.control-input[type="radio"]:checked+.control-mark:hover::before {
+  background-color: var(--light-color);
+}
+
+.control-input[type="radio"]:checked+.control-mark:disabled::before {
+  background-color: var(--secondary-color);
+}
+
 .control-mark:hover {
   border: 1px solid var(--light-color);
 }
@@ -1803,24 +1856,39 @@ button {}
   margin-bottom: 81px;
 }
 
-.control-mark-checkbox {
+.control-input[type="checkbox"]+.control-mark-checkbox {
   position: absolute;
   top: 2px;
   left: 16px;
-  width: 13px;
-  height: 13px;
-  border: 1.5px solid var(--main-color);
-  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/icon-check-off.svg);
+  background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.control-input[type="checkbox"]:checked+.control-mark-checkbox {
+  background-image: url(../img/icon-check-on.svg);
+}
+
+.control-input[type="checkbox"]+.control-mark-checkbox:hover {
+  background-image: url(../img/icon-check-off-hover.svg);
+}
+
+.control-input[type="checkbox"]:checked+.control-mark-checkbox:hover {
+  background-image: url(../img/icon-check-on-hover.svg);
+}
+
+.control-input[type="checkbox"]:disabled+.control-mark-checkbox {
+  background-image: url(../img/icon-check-off-disabled.svg);
+}
+
+.control-input[type="checkbox"]:checked:disabled+.control-mark-checkbox:hover {
+  background-image: url(../img/icon-check-on-disabled.svg);
 }
 
 .catalog-filter-item:first-child .control-mark-checkbox {
   left: 0;
-}
-
-
-.control-mark-checkbox:hover {
-  border: 1.5px solid var(--light-color);
 }
 
 .pagination-item {
@@ -1959,4 +2027,5 @@ button {}
   width: 408px;
   height: 149px;
   padding-top: 14px;
+  resize: none;
 }

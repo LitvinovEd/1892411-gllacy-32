@@ -18,8 +18,8 @@
           <div class="catalog-navigation">
             <button class="close-catalog-navigation" type="button">Каталог</button>
             <h2 class="visually-hidden">Список групп товаров</h2>
-            <a class="catalog-new-items" href="#">Новинки</a>
-            <div class="catalog-navigation-delimiter"></div>
+            <a class="catalog-navigation-item catalog-new-items" href="#">Новинки</a>
+            <hr class="catalog-navigation-delimiter">
             <ul class="catalog-navigation-list">
               <li class="catalog-navigation-item">
                 <a class="catalog-link" href="catalog.html">Сливочное</a>
@@ -68,7 +68,7 @@
             <label class="visually-hidden" for="modal-search">
               Поиск по сайту
             </label>
-            <input class="popover-search-imput" type="text" id="modal-search" name="modal-search"
+            <input class="popover-search-imput" type="search" id="modal-search" name="modal-search"
               placeholder="Поиск поиск по сайту">
           </div>
         </div>
@@ -413,6 +413,8 @@
               Дата
               <span class="info">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                <span class="info-label">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин?
+                  Закажите доставку мороженого на дом и курьер привезет вам ваш заказ в течение часа!</span>
               </span>
             </label>
             <input class="form-fields form-date" type="text" id="appointment-date" name="appointment-date"
@@ -429,7 +431,9 @@
             <label class="input-field" for="appointment-form-address">
               Адрес
               <span class="info">
-                <span class="visually-hidden">Посмотреть дополнительную информацию</span></span>
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                <span class="info-label">Введите название улицы, дома и квартиры</span>
+              </span>
             </label>
             <input class="form-fields form-address" type="text" id="appointment-form-address"
               name="appointment-form-address" placeholder="ул. Большая Конюшенная, 19/8">
