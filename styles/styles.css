@@ -37,6 +37,14 @@
   --second-color: #ff7799;
   --neutral-color: #b9b9b9;
   --hover-color: #ffcbd8;
+  --range-color: rgba(86, 92, 102, 0.3);
+  --modal-color: rgba(45, 52, 64, 0.3);
+  --popover-color: #ffffff;
+  --additional-color: rgba(255, 47, 100, 0.3);
+  --info-color: rgba(173, 152, 143, 0.18);
+  --substrate-color: rgba(255, 203, 216, 0.4);
+  --active-color: #ff4a78;
+  --control-color: #242424;
 }
 
 body {
@@ -223,7 +231,7 @@ body {
   padding-right: 16px;
   border: 1px solid var(--neutral-color);
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: var(--popover-color);
 }
 
 .popover-close-search {
@@ -404,7 +412,7 @@ body {
   position: absolute;
   width: 12px;
   height: 2px;
-  background-color: #242424;
+  background-color: var(--control-color);
 }
 
 .popover-total-price {
@@ -717,7 +725,7 @@ body {
   width: 100px;
   height: 100px;
   top: 25px;
-  background-color: rgba(255, 203, 216, 0.4);
+  background-color: var(--substrate-color);
   border-radius: 50%;
 }
 
@@ -1133,7 +1141,7 @@ body {
   padding-right: 16px;
   border: 1px solid var(--neutral-color);
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: var(--popover-color);
 }
 
 .form-fields::placeholder {
@@ -1175,7 +1183,7 @@ body {
   color: var(--light-color);
   background-color: var(--button-color);
   border: none;
-  box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3), 0 4px 12px var(--main01-color);
+  box-shadow: 0 0 0 4px var(--additional-color), 0 4px 12px var(--main01-color);
   border-radius: 26px;
   cursor: pointer;
 }
@@ -1293,7 +1301,7 @@ body {
   top: -10px;
   padding: 10px 8px;
   background-color: var(--light-color);
-  box-shadow: 0 2px 12px rgba(173, 152, 143, 0.18);
+  box-shadow: 0 2px 12px var(--info-color);
   border-radius: 1px;
   width: 162px;
   border: 1px solid var(--neutral-color);
@@ -1511,7 +1519,7 @@ body {
 
 .active-page {
   color: var(--light-color);
-  background-color: #ff4a78;
+  background-color: var(--active-color);
 }
 
 .breadcrumbs-link {
@@ -1598,7 +1606,7 @@ body {
   position: relative;
   width: 164px;
   height: 2px;
-  background-color: rgba(86, 92, 102, 0.3);
+  background-color: var(--range-color);
   border-radius: 2px;
 }
 
@@ -1918,14 +1926,14 @@ body {
   display: none;
   width: 100%;
   height: 100%;
-  background-color: rgba(45, 52, 64, 0.3);
+  background-color: var(--modal-color);
 }
 
 .modal {
   position: relative;
   margin: auto;
   padding: 40px;
-  background-color: #ffffff;
+  background-color: var(--popover-color);
 }
 
 .modal-close-button {
@@ -1984,5 +1992,3 @@ body {
   padding-top: 14px;
   resize: none;
 }
-
-.test{}
