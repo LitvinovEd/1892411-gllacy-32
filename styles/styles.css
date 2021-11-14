@@ -997,7 +997,7 @@ body {
 .advantages {
   margin-top: 80px;
   width: 1170px;
-  height: 479px;
+  min-height: 479px;
   background-image: url("../img/waffle-background.jpg");
   border-radius: 16px;
   background-repeat: no-repeat;
@@ -1028,6 +1028,7 @@ body {
   padding-right: 40px;
   gap: 41px 30px;
   margin: 0;
+  padding-bottom: 30px;
 }
 
 .advantages-item {
